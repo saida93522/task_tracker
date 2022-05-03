@@ -2,8 +2,8 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello React</h1>
+    <div className="App container">
+      <h1></h1>
     </div>
   );
 }
