@@ -58,9 +58,10 @@ body {
 }
 
 .task {
-  background: #f4f4f4;
+  /* background: #f4f4f4; */
+  background: #5e5d5d;
   margin: 5px;
-  padding: 10px 20px;
+  padding: 15px 20px;
   cursor: pointer;
 }
 
