@@ -62,7 +62,7 @@ body {
   background: #5e5d5d;
   margin: 5px;
   padding: 15px 20px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .task.reminder {
@@ -113,4 +113,7 @@ body {
 footer {
   margin-top: 30px;
   text-align: center;
+}
+.fa-del {
+  cursor: pointer;
 }
