@@ -9,20 +9,27 @@
 body {
   font-family: "Poppins", sans-serif;
   background: #2f3640;
-  color: #f5f6fa;
+  color: #595959;
+  background-color: #f7f6f6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .container {
+  background: #f2f2f2;
   max-width: 500px;
   margin: 10rem auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid #34ace0;
   padding: 30px;
   border-radius: 5px;
+  box-shadow: rgb(65, 70, 61) 0px 20px 30px -10px;
+  border: 1.2px solid rgb(0, 0, 0, 0.2);
 }
 
+.tasks {
+  margin-top: 2vmin;
+}
 .header {
   display: flex;
   justify-content: space-between;
@@ -32,7 +39,7 @@ body {
 
 .btn {
   display: inline-block;
-  background: #000;
+  background: rgb(98, 116, 90);
   color: #fff;
   border: none;
   padding: 10px 20px;
@@ -58,15 +65,14 @@ body {
 }
 
 .task {
-  /* background: #f4f4f4; */
-  background: #5e5d5d;
-  margin: 5px;
+  background-color: #ebebeb;
+  margin: 15px 7px;
   padding: 15px 20px;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .task.reminder {
-  border-left: 5px solid green;
+  border-left: 5px solid gold;
 }
 
 .task h3 {
@@ -110,10 +116,67 @@ body {
   height: 20px;
 }
 
+section {
+  position: relative;
+}
+
+.fa {
+  cursor: pointer;
+}
+
+.fa-del {
+  color: #e84118;
+}
+.fa-bell {
+  position: absolute;
+  left: -1.5rem;
+}
+
 footer {
   margin-top: 30px;
   text-align: center;
 }
-.fa-del {
+
+.add-btn {
+  align-self: center;
+  background: rgb(198, 223, 187);
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, 0.2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
   cursor: pointer;
+  display: inline-block;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 23px;
+  outline: none;
+  padding: 0.75rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.add-btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.add-btn:focus {
+  outline: none;
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 8px 4px -6px;
+}
+.btn:active {
+  outline: none;
 }
