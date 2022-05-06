@@ -27,17 +27,14 @@ body {
   border: 1.2px solid rgb(0, 0, 0, 0.2);
 }
 
-.tasks {
-  margin-top: 2vmin;
-}
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 13px;
 }
 
-.btn {
+.btns {
   display: inline-block;
   background: rgb(98, 116, 90);
   color: #fff;
@@ -51,11 +48,11 @@ body {
   font-family: inherit;
 }
 
-.btn:focus {
+.btns:focus {
   outline: none;
 }
 
-.btn:active {
+.btns:active {
   transform: scale(0.98);
 }
 
@@ -66,7 +63,7 @@ body {
 
 .task {
   background-color: #ebebeb;
-  margin: 15px 7px;
+  margin: 15px 22px;
   padding: 15px 20px;
   cursor: pointer;
 }
@@ -91,6 +88,7 @@ body {
 
 .form-control label {
   display: block;
+  font-weight: bold;
 }
 
 .form-control input {
@@ -105,6 +103,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 3vmin;
 }
 
 .form-control-check label {
@@ -125,7 +124,7 @@ section {
 }
 
 .fa-del {
-  color: #e84118;
+  color: #ff5252;
 }
 .fa-bell {
   position: absolute;
