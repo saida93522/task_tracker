@@ -1,6 +1,12 @@
 # Task Tracker
 
-A simple task tracker with React that allows a user to add, update, and delete tasks.
+## A simple task tracker with React
+
+---
+
+![Alternate text](public/sc_add.png)
+
+![Alternate text](public/sc_close.png)
 
 ## Usage
 
